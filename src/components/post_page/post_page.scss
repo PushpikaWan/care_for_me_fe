@@ -1,6 +1,7 @@
 $page-background-color: #fafafa;
 
 .post-page-main-container {
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -18,6 +19,18 @@ $page-background-color: #fafafa;
   align-items: center;
   padding: 0 1%;
   overflow: scroll;
+}
+
+.android-link{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.android-link-button{
+  width: 50px;
+  padding-left: 20px;
+  align-items: center;
 }
 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
