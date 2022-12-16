@@ -11,11 +11,11 @@ export default function HomePage() {
           <div className="home-page-description-container">
             <img className="banner-image" src="/banner.png" alt="image"/>
             <div className="home-page-details-container">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s, when an unknown
-              printer took a galley of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in
+              This is an animal-caring application. "Care for me" as the name described, users can
+              post animals related content like Adoption, Healing, Lost and found, etc... Users can
+              ask for those actions on their behalf. Users can share posts through Facebook,
+              Instagram, WhatsApp or any other social media to get more attention for animals who
+              needs to be taken care.
             </div>
             <div className="home-page-description-bottom-container">
               <Lottie className="home-dog-animation" animationData={whiteDog} loop={true}/>

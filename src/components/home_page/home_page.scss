@@ -35,24 +35,25 @@ $page-background-color: #fafafa;
   align-items: center;
 }
 
-.home-page-description-bottom-container{
+.home-page-description-bottom-container {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.home-page-details-container{
+.home-page-details-container {
   padding-top: 4vh;
   padding-bottom: 10vh;
   text-align: justify;
 }
 
 .home-dog-animation {
-  width: 10vw;
+  min-width: 10vw;
 }
 
-.banner-image{
+.banner-image {
   height: 10vh;
 }
 
@@ -65,20 +66,16 @@ $page-background-color: #fafafa;
 }
 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-@media (min-width: 320px) {
-  /* use default view */
-}
-
-/* smartphones, Android phones, landscape iPhone */
-@media only screen and (min-width: 480px) {
+@media (max-width: 480px) {
+  .home-page-content-container {
+    width: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width: 600px) {
-  .post-page-container {
-    width: 50%;
-    height: 90%;
-  }
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -95,8 +92,10 @@ $page-background-color: #fafafa;
 
 /* all landscape modes - mobile devices below 1025px */
 @media (max-width: 1025px) and (orientation: landscape) {
-  .post-page-container {
-    width: 100%;
-    height: 100%;
+  .home-page-content-container {
+    width: 100vw;
+  }
+  .home-dog-animation {
+    width: 10vw;
   }
 }
