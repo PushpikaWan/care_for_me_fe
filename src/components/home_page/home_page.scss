@@ -21,6 +21,8 @@ $page-background-color: #fafafa;
 
 .home-page-description-container {
   display: flex;
+  width: 100%;
+  height: 100%;
   flex: 0.5;
   flex-direction: column;
   justify-content: space-between;
@@ -39,6 +41,7 @@ $page-background-color: #fafafa;
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -66,12 +69,27 @@ $page-background-color: #fafafa;
 }
 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .home-page-content-container {
+    height: 100vh;
     width: 100%;
     flex-direction: column;
     overflow-y: scroll;
   }
+  .banner-image {
+    padding-left: 20px;
+    padding-top: 200px;
+  }
+
+  .home-page-details-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home-dog-animation {
+    padding-bottom: 30px;
+  }
+
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
